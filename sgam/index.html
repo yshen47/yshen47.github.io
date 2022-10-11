@@ -35,30 +35,20 @@
     <div class="container" id="main">
         <div class="row">
             <h2 class="col-md-12 text-center">
-                <b>NeurMips</b>: Neural Mixture of Planar Experts <br> for View Synthesis</br> 
+                SGAM: Building a Virtual 3D World through Simultaneous Generation and Mapping</br> 
             </h2>
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
                     <li>
-                        <a href="https://zhihao-lin.github.io/" target="_blank" rel="noopener noreferrer">
-                          Zhi-Hao Lin \(^{1, 2}\)
+                        <a href="https://yshen47.github.io/" target="_blank" rel="noopener noreferrer">
+                          Yuan Shen \(^{1}\)
                         </a>
                     </li>
                     <li>
                         <a href="https://people.csail.mit.edu/weichium/" target="_blank" rel="noopener noreferrer">
-                            Wei-Chiu Ma \(^{3*}\)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                          Hao-Yu Hsu \(^{2*}\)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://vllab.ee.ntu.edu.tw/ycwang.html" target="_blank" rel="noopener noreferrer">
-                          Yu-Chiang Frank Wang \(^2\)
+                            Wei-Chiu Ma \(^{2}\)
                         </a>
                     </li>
                     <li>
@@ -76,23 +66,15 @@
                         \(^1\) University of Illinois at Urbana-Champaign
                     </li>
                     <li>
-                        \(^2\) National Taiwan University
-                    </li>
-                    <li>
-                        \(^3\) Massachusetts Institute of Technology
+                        \(^2\) Massachusetts Institute of Technology
                     </li>
                 </ul>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 text-center">
-                \(^*\) Equal Contribution
-            </div>
-        </div>
-        <div class="row">
             <h2 class="col-md-12 text-center">
                 <small>
-                    CVPR 2022
+                    NeurIPS 2022
                 </small>
             </h2>
         </div>
@@ -130,11 +112,17 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
-                We present Neural Mixtures of Planar Experts (<b>NeurMiPs</b>), a novel planar-based scene representation for modeling geometry and appearance. 
-                NeurMiPs leverages a collection of local planar experts in 3D space as the scene representation.  Each planar expert consists of the parameters of the local rectangular shape representing geometry and a neural radiance field modeling the color and opacity.  
-                We render novel views by calculating ray-plane intersections and composite output colors and densities at intersected points to the image. 
-                NeurMiPs blends the efficiency of explicit mesh rendering and flexibility of the neural radiance field. 
-                Experiments demonstrate superior performance and speed of our proposed method, compared to other 3D representations in novel view synthesis.
+                    We present simultaneous generation and mapping (SGAM), a novel 3D scene generation algorithm. Our goal is to produce a 
+                    realistic, globally consistent 3D world on a large scale. Achieving this goal is challenging and goes beyond the capacities 
+                    of existing 3D generation or video generation approaches, which fail to scale up to create large, globally consistent 3D 
+                    scene structures. Towards tackling the challenges, we take a hybrid approach that integrates generative sensor modeling 
+                    with 3D reconstruction. Our proposed approach is an autoregressive generative framework that simultaneously generates 
+                    sensor data at novel viewpoints and builds a 3D map at each timestamp. Given an arbitrary camera trajectory, our method 
+                    repeatedly applies this generation-and-mapping process for thousands of steps, allowing us to create a gigantic virtual world. 
+                    Our model can be trained from RGB-D sequences without having access to the complete 3D scene structure. The generated scenes 
+                    are readily compatible with various interactive environments and rendering engines. Building upon the CLEVR dataset, we propose 
+                    a large-scale 3D scene generation benchmark, CLEVR-Infinite dataset, and demonstrate ours can generate consistent, realistic, 
+                    and geometrically-plausible scenes that compare favorably to existing view synthesis methods. 
                 </p>
             </div>
         </div>
