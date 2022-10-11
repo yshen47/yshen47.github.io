@@ -1,308 +1,349 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta name="viewport" content="“width=800”">
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-  <link href="./files/css" rel="stylesheet">
-  <style type="text/css">
-    /* Design Credits: Jon Barron and Abhishek Kar and Saurabh Gupta*/
-    a {
-    color: #1772d0;
-    text-decoration:none;
-    }
-    a:focus, a:hover {
-    color: #f09228;
-    text-decoration:none;
-    }
-    body,td,th {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 16px;
-      font-weight: 400
-    }
-    heading {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 19px;
-      font-weight: 1000
-    }
-    strong {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 16px;
-      font-weight: 800
-    }
-    strongred {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      color: 'red' ;
-      font-size: 16px
-    }
-    sectionheading {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 22px;
-      font-weight: 600
-    }
-    </style>
-  <title>Yuan Shen</title>
-  
-  <link href="./files/css(1)" rel="stylesheet" type="text/css">
-  </head>
-  <body data-gr-c-s-loaded="true">
-  <table width="900" border="0" align="center" cellspacing="0" cellpadding="20">
-    <tbody><tr>
-        <td halign="center">
-          <p align="center">
-            <font size="6">Yuan Shen</font>
-          </p>
-        </td>
-      </tr>
-    <tr>
-    <td>
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tbody><tr>
-        <td width="67%" valign="middle">
 
-        <p>I am a Computer Science PhD Candidate at UIUC. My PhD advisor is <a href="https://shenlong.web.illinois.edu">Prof. Shenlong Wang</a>. During my Phd, I also collaborate with <a href="https://krdc.web.illinois.edu">Prof. Katie Driggs-Campbell</a>. My research area is Computer Vision. Specifically, I am working on exciting projects related to infinite 3D scene generation. </p>
 
-	<p>Previously, I completed my Bachelor's degree with the highest honor at UIUC, with a major in Computer Science and minor in Mathematics. I was a research assistant at the Data-Driven Design group, led by <a href="http://ranjithakumar.net/">Prof. Ranjitha Kumar</a>. My undergrad research focused on fashion AI.</p>
-	
-        <p> Inspired by Wei-chiu Ma, I have decided to commit 1~2 hours every week to provide guidance, suggestions, and/or mentorships for students from underrepresented groups or whoever is in need. Please fill in <a href="https://forms.gle/nSDVuZwgkm9ZqJ4TA"> this form </a> if you are interested. </p>
+<!DOCTYPE html>
+<html>
 
-	<p> <font color="red"> I am looking for Computer Vision research internship for 2023. I would appreciate a ping if you see a job I might fit. </font></p>
-	Pro bono office hour
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>NeurMips</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>NeurMips</b>: Neural Mixture of Planar Experts <br> for View Synthesis</br> 
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://zhihao-lin.github.io/" target="_blank" rel="noopener noreferrer">
+                          Zhi-Hao Lin \(^{1, 2}\)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://people.csail.mit.edu/weichium/" target="_blank" rel="noopener noreferrer">
+                            Wei-Chiu Ma \(^{3*}\)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                          Hao-Yu Hsu \(^{2*}\)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://vllab.ee.ntu.edu.tw/ycwang.html" target="_blank" rel="noopener noreferrer">
+                          Yu-Chiang Frank Wang \(^2\)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://shenlong.web.illinois.edu/" target="_blank" rel="noopener noreferrer">
+                          Shenlong Wang \(^1\)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        \(^1\) University of Illinois at Urbana-Champaign
+                    </li>
+                    <li>
+                        \(^2\) National Taiwan University
+                    </li>
+                    <li>
+                        \(^3\) Massachusetts Institute of Technology
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                \(^*\) Equal Contribution
+            </div>
+        </div>
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <small>
+                    CVPR 2022
+                </small>
+            </h2>
+        </div>
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/abs/2204.13696" target="_blank" rel="noopener noreferrer">
+                            <image src="img/neurmips_paper_cover.png" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/PV1dCTWL5Oo" target="_blank" rel="noopener noreferrer">
+                            <image src="img/youtube_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/zhihao-lin/neurmips" target="_blank" rel="noopener noreferrer">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <!-- Abstraction, Overview figure-->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <image src="img/overview.png" class="img-responsive" alt="overview"><br>
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                We present Neural Mixtures of Planar Experts (<b>NeurMiPs</b>), a novel planar-based scene representation for modeling geometry and appearance. 
+                NeurMiPs leverages a collection of local planar experts in 3D space as the scene representation.  Each planar expert consists of the parameters of the local rectangular shape representing geometry and a neural radiance field modeling the color and opacity.  
+                We render novel views by calculating ray-plane intersections and composite output colors and densities at intersected points to the image. 
+                NeurMiPs blends the efficiency of explicit mesh rendering and flexibility of the neural radiance field. 
+                Experiments demonstrate superior performance and speed of our proposed method, compared to other 3D representations in novel view synthesis.
+                </p>
+            </div>
+        </div>
+
+        <!-- Video -->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="https://www.youtube.com/embed/PV1dCTWL5Oo" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-      </p><p align="center"><a>
-      </a><a href="mailto:yshen47@illinois.edu">E-Mail</a> | <a href="https://github.com/yshen47">Github</a> | <a href="https://www.linkedin.com/in/yshen47/"> LinkedIn </a> | <a href="https://drive.google.com/file/d/1va6s286NcXFs8gOz7mqVNxf67-RhhdDj/view?usp=sharing"> CV </a> | <a href="https://scholar.google.com/citations?user=fReKTsYAAAAJ"> Google Scholar </a>
-      </p>
-        </td>
-        <td width="100%" valign="top">
-        <img src="./files/Yuan.png" width="100%">
-        </td>
-      </tr>
-      </tbody></table>
-      
-	  
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tbody><tr>
-        <td>
-        <heading>News</heading>
-        </td>
-      </tr>
-      </tbody></table>	  
-	  <table class="news-table" width="100%" align="center" border="0" style="text-align: justify">
-    <colgroup><col width="15%">
-    <col width="85%">
-    </colgroup><tbody>
-      <tr>
-        <td valign="top" align="center"><strong>September 2022</strong></td>
-        <td> Our paper, "SGAM: Building a Virtual 3D World through Simultaneous Generation and Mapping", is accepted at NeurIPS 2022 (Acceptance Rate: 25.6%). </td>
-      </tr>
-      <tr>
-        <td valign="top" align="center"><strong>June 2022</strong></td>
-        <td> Our paper, "CoCAtt: A Cognitive-Conditioned Driver Attention Dataset", is accepted at ITSC 2022. </td>
-      </tr>
-      <tr>
-        <td valign="top" align="center"><strong>November 2021</strong></td>
-        <td> Passed my PhD Qualifying Exam! Very excited to be admitted to PhD Candidancy at UIUC!</td>
-      </tr>
-      <tr>
-        <td valign="top" align="center"><strong>July 2021</strong></td>
-        <td> Our paper, "Effectively Leveraging Attributes for Visual Similarity", is accepted at International Conference on Computer Vision, ICCV 2021. </td>
-      </tr>
-      <tr>
-        <td valign="top" align="center"><strong>April 2021</strong></td>
-        <td> Our peer-reviewed workshop paper, "Effectively Leveraging Attributes for Visual Similarity", is accepted at Fourth Workshop on Computer Vision for Fashion, Art and Design at CVPR 2021. </td>
-      </tr>
-      <tr>
-        <td valign="top" align="center"><strong>March 2021</strong></td>
-        <td> Our peer-reviewed extended abstract, "AutoPreview: A Framework for Autopilot Behavior Understanding", is accepted at CHI2021 Late Breaking Work (Acceptance Rate: 39%). </td>
-      </tr> 
-      <tr>
-        <td valign="top" align="center"><strong>Jan 2021</strong></td>
-        <td> Our peer-reviewed extended abstract, "Building Mental Models through Preview of Autopilot Behaviors", is accepted at TRAITS workshop at HRI2021. </td>
-      </tr> 
-      <tr>
-        <td valign="top" align="center"><strong>March 2020</strong></td>
-        <td> Our workshop Paper, "Can AI decrypt fashion jargon for you?", is accepted at AI4HIC workshop at CHI 2020.</td>
-      </tr> 
-      <tr>
-        <td valign="top" align="center"><strong>June 2019</strong></td>
-        <td> Intern at Reconstruct Inc. </td>
-      </tr> 
-      <tr>
-        <td valign="top" align="center"><strong>May 2019</strong></td>
-        <td> Graduated with highest honor in UIUC.</td>
-      </tr> 
-      <tr>
-        <td valign="top" align="center"><strong>April 2019</strong></td>
-        <td> Accepted CS PhD offer at UIUC and joined Data Driven Design group led by Prof. Kumar.</td>
-      </tr> 
-</tbody></table>
-	  
-	  
-	  
-	  
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tbody><tr>
-        <td width="100%" valign="middle">
-          <heading>Publications</heading>
-        </td>
-      </tr>
-      </tbody></table>
-  
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-	  
-	  
-	  <tbody>   
-	<tr>
-        <td width="35%">
-          <div class="one">
-          <div class="two" id="cvpr_2020" style="opacity: 1;"><img src="./files/SGAM.png" alt="sym" height='14%' width="100%" style="border-style: none"></div>
-          </div>
-        </td>
-	 <td valign="top" width="65%">
-          <p>
-          <img src="./files/new.png" width="6%" style="border-style: none">
-          <heading>SGAM: Building a Virtual 3D World through Simultaneous Generation and Mapping</heading></a><br>
-	  <strong>Yuan Shen</strong>, Wei-Chiu Ma, Shenlong Wang<br>
-	  <em>Thirty-sixth Conference on Neural Information Processing Systems.        (NeurIPS 2022)</em><br>    
-<!--           	<a href='https://arxiv.org/pdf/2111.10014.pdf'>paper</a><br> 
-		<a href='https://cocatt-dataset.github.io'>project</a><br> -->
-		<a href='https://github.com/yshen47/SGAM'>codebase</a><br>
-	  </p></td>	
-      </tr>
-      <tr>
-        <td width="35%">
-          <div class="one">
-          <div class="two" id="cvpr_2020" style="opacity: 1;"><img src="./files/cocatt.png" alt="sym" height='14%' width="100%" style="border-style: none"></div>
-          </div>
-        </td>
-	 <td valign="top" width="65%">
-          <p>
-          <img src="./files/new.png" width="6%" style="border-style: none">
-          <heading>CoCAtt: A Cognitive-Conditioned Driver Attention Dataset</heading></a><br>
-	  <strong>Yuan Shen</strong>, Niviru Wijayaratne & Pranav Sriram, Aamir Hasan, Peter Du and Katherine Driggs-Campbell<br>
-	  <em>The 25th IEEE International Conference on Intelligent Transportation Systems. (ITSC 2022)</em><br>    
-          <a href='https://arxiv.org/pdf/2111.10014.pdf'>paper</a><br> <a href='https://cocatt-dataset.github.io'>project</a><br>
-	  </p></td>
-      </tr>
-	
-        <tr>
-        <td width="35%">
-          <div class="one">
-          <div class="two" id="cvpr_2020" style="opacity: 1;"><img src="./files/pan.png" alt="sym" height='14%' width="100%" style="border-style: none"></div>
-          </div>
-        </td>
-	 <td valign="top" width="65%">
-          <p>
-          <heading>Effectively Using Attributes for Visual Similarity</heading></a><br>
-	  Samarth Mishra, Zhongping Zhang, <strong>Yuan Shen</strong>, Ranjitha Kumar, Venkatesh Saligrama, Bryan Plummer<br>
-	  <em>International Conference on Computer Vision (IEEE). (ICCV 2021)</em><br>    
-          <a href='https://openaccess.thecvf.com/content/ICCV2021/papers/Mishra_Effectively_Leveraging_Attributes_for_Visual_Similarity_ICCV_2021_paper.pdf'>link</a><br>
-	  </p></td>
-      </tr>
-	
-		  <tr>
-        <td width="35%">
-          <div class="one">
-          <div class="two" id="cvpr_2020" style="opacity: 1;"><img src="./files/autopreview.png" alt="sym" height='14%' width="100%" style="border-style: none"></div>
-          </div>
-        </td>
-	 <td valign="top" width="65%">
-          <p>
-          <heading>AutoPreview: A Framework for Autopilot Behavior Understanding</heading></a><br>
-          <strong>Yuan Shen</strong>, Niviru Wijayaratne, Peter Du, Shanduojiao Jiang, Katherine Driggs Campbell<br>
-	  <em>SIGCHI Conference on Human Factors in Computing Systems (CHI 2021) Late Breaking Work (Acceptance Rate: 39%)</em><br>    
-          <a href='https://arxiv.org/pdf/2102.13034'>arxiv</a><br>
-	  </p></td>
-      </tr>
-	
-	<tr>
-        <td width="35%">
-          <div class="one">
-          <div class="two" id="cvpr_2020" style="opacity: 1;"><img src="./files/autopreview2.png" alt="sym" height='14%' width="100%" style="border-style: none"></div>
-          </div>
-        </td>
-	 <td valign="top" width="65%">
-          <p>
-          <heading>Building Mental Models through Preview of Autopilot Behaviors</heading></a><br>
-          <strong>Yuan Shen</strong>, Niviru Wijayaratne, Katherine Driggs Campbell<br>
-	  <em>The Road to a successful HRI: AI, Trust and ethicS (TRAITS) Workshop at ACM/IEEE International Conference on Human-Robot Interaction (HRI 2021) </em><br>    
-          <a href='https://sites.google.com/view/traits-hri/schedule?authuser=0'>arxiv</a><br>
-	  </p></td>
-      </tr>
+        <!-- Results -->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Results: Tanks&Temple
+                </h3>
+                <p class="text-justify">
+                    The videos qualitatively compare NeurMips with <a href="https://github.com/creiser/kilonerf" target="_blank" rel="noopener noreferrer">KiloNeRF</a>.
+                </p>                
+                <div class="col-md-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://youtu.be/lWXts-ElmYo" target="_blank" rel="noopener noreferrer">
+                            <image src="img/tat/barn.png" height="200px">
+                                <h4><strong>Barn</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/lJl9W-i1s-I" target="_blank" rel="noopener noreferrer">
+                            <image src="img/tat/caterpillar.png" height="200px">
+                                <h4><strong>Caterpillar</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/zCscuDwHN4s" target="_blank" rel="noopener noreferrer">
+                            <image src="img/tat/family.png" height="200px">
+                                <h4><strong>Family</strong></h4>
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="https://youtu.be/znsi9Spt7bY" target="_blank" rel="noopener noreferrer">
+                            <image src="img/tat/ignatius.png" height="200px">
+                                <h4><strong>Ignatius</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/8_bLNh_Wwg0" target="_blank" rel="noopener noreferrer">
+                            <image src="img/tat/truck.png" height="200px">
+                                <h4><strong>Truck</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="video-tat">
+                    <iframe src="https://www.youtube.com/embed/lWXts-ElmYo?playlist=lWXts-ElmYo&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
+                </div>
+                <div class="video-tat">
+                    <iframe src="https://www.youtube.com/embed/lJl9W-i1s-I?playlist=lJl9W-i1s-I&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
+                </div>
+                <div class="video-tat">
+                    <iframe src="https://www.youtube.com/embed/zCscuDwHN4s?playlist=zCscuDwHN4s&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
+                </div>
+                <div class="video-tat">
+                    <iframe src="https://www.youtube.com/embed/znsi9Spt7bY?playlist=znsi9Spt7bY&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
+                </div>
+                <div class="video-tat">
+                    <iframe src="https://www.youtube.com/embed/8_bLNh_Wwg0?playlist=8_bLNh_Wwg0&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
+                </div> -->
 
-      <tr>
-        <td width="35%">
-          <div class="one">
-          <div class="two" id="cvpr_2020" style="opacity: 1;"><img src="./files/placeholder.png" alt="sym" height='14%' width="100%" style="border-style: none"></div>
-          </div>
-        </td>
-	 <td valign="top" width="65%">
-          <p>
-          <heading>To Explain or Not to Explain: A Study on the Necessity of Explanations for Autonomous Vehicles</heading></a><br>
-          <strong>Yuan Shen</strong>, Shanduojiao Jiang, Yanlin Chen, Eileen Yang, Xilun Jin, Yuliang Fan, Katie Driggs-Campbell<br>
-          <a href='https://arxiv.org/abs/2006.11684'>arxiv</a><br>
-	  </p></td>
-      </tr>
-	
-      <tr>
-        <td width="35%">
-          <div class="one">
-          <div class="two" id="cvpr_2020" style="opacity: 1;"><img src="./files/placeholder.png" alt="sym" height='14%' width="100%" style="border-style: none"></div>
-          </div>
-        </td>
-	 <td valign="top" width="65%">
-          <p>
-          <heading>Can AI decrypt fashion jargon for you?</heading></a><br>
-          <strong>Yuan Shen</strong>, Shanduojiao Jiang, Muhammad Rizky Wellyanto, Ranjitha Kumar<br>
-          <em>SIGCHI Conference on Human Factors in Computing Systems (CHI 2020)</em><br>
-          Workshop paper at <a href="https://sites.google.com/view/ai4hci/home">AI4HCI workshop</a><br>
-          <a href='https://arxiv.org/abs/2003.08052'>arxiv</a><br>
-        </p></td>
-      </tr>
-	
-      </tbody></table>
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tbody><tr>
-        <td>
-        <heading>Affiliations</heading>
-        </td>
-      </tr>
-      </tbody></table>
-	  <table align="center">
-    <tbody><tr>
-        <td width="17%" align="center">
-            <a href="https://cs.illinois.edu/" target="_blank">
-            <img style="width:100px" src="./files/uiuc2.jpg"></a>&nbsp; &nbsp;
-        </td>
-        <td width="17%" align="center">
-            <a href="https://www.reconstructinc.com/" target="_blank">
-            <img style="width:90px" src="./files/reconstruct.png"></a>&nbsp; &nbsp;
-        </td>
-    </tr>
-    <tr>
-    </tr>
-</tbody></table>
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tbody><tr>
-        <td>
-        <heading>Teaching Assistant</heading>
-        </td>
-      </tr>
-      </tbody></table>  
-<ul>
-  <li> <a href="https://shenlong.web.illinois.edu/teaching/cs498spring22/">Introduction to Machine Perception (CS 498) -  Spring 2022 </a></li>
-  <li> <a href="https://courses.engr.illinois.edu/cs543/fa2021/">Computer Vision (CS 543) -  Fall 2021 </a></li>
-  <li> <a href="https://courses.engr.illinois.edu/cs445/fa2020/">Computational Photography (CS 445) -  Fall 2020 </a></li>
-  <li> <a href="http://saurabhg.web.illinois.edu/teaching/ece549/sp2020/">Computer Vision (CS 543) - Spring 2020 </a></li>
-  <li> <a href="https://courses.engr.illinois.edu/cs445/fa2019/">Computational Photography (CS 445) - Fall 2019 </a></li>
-</ul>
-<br>
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="5">
-    <tbody><tr><td><p align="right"><font size="2">
-    Template credits: <a href="http://www.cs.berkeley.edu/~sgupta/">Saurabh</a>
-    </font></p></td></tr>
-</tbody></table>
-     
-    </td>
-    </tr>
-  </tbody></table>
-</body><div><div class="gr_-editor gr-iframe-first-load" style="display: none;"><div class="gr_-editor_back"></div><iframe class="gr_-ifr gr-_dialog-content" src="./files/saved_resource.html"></iframe></div></div><grammarly-card><div></div></grammarly-card><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Results: Replica
+                </h3>
+                <p class="text-justify">
+                    The videos qualitatively compare NeurMips with <a href="https://github.com/facebookresearch/pytorch3d/tree/main/projects/nerf" target="_blank" rel="noopener noreferrer">NeRF</a> (PyTorch3D implementation) and <a href="https://nex-mpi.github.io/" target="_blank" rel="noopener noreferrer">NeX</a>, which are volume rendering method and multi-plane image (MPI) respectively.
+                </p>
+                <br>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <ul class="nav nav-pills nav-justified">
+                            <li>
+                                <a href="https://youtu.be/RO6g-9pA0rs" target="_blank" rel="noopener noreferrer">
+                                <image src="img/replica/replica-apartment0.jpg" height="150px">
+                                    <h4><strong>Apartment 0</strong></h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://youtu.be/QGGRkbwnM44" target="_blank" rel="noopener noreferrer">
+                                <image src="img/replica/replica-apartment1.jpg" height="150px">
+                                    <h4><strong>Apartment 1</strong></h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://youtu.be/eGlpLuT-1f8" target="_blank" rel="noopener noreferrer">
+                                <image src="img/replica/replica-apartment2.jpg" height="150px">
+                                    <h4><strong>Apartment 2</strong></h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://youtu.be/6jIc0f0eOfk" target="_blank" rel="noopener noreferrer">
+                                <image src="img/replica/replica-frl0.jpg" height="150px">
+                                    <h4><strong>FRL 0</strong></h4>
+                                </a>
+                            </li>
+                            <br>
+                            <li>
+                                <a href="https://youtu.be/GqMEzrauJkE" target="_blank" rel="noopener noreferrer">
+                                <image src="img/replica/replica-kitchen.jpg" height="150px">
+                                    <h4><strong>Kitchen</strong></h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://youtu.be/zZ-1nrIK_l8" target="_blank" rel="noopener noreferrer">
+                                <image src="img/replica/replica-room0.jpg" height="150px">
+                                    <h4><strong>Room 0</strong></h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://youtu.be/4k_3FGSFdMA" target="_blank" rel="noopener noreferrer">
+                                <image src="img/replica/replica-room2.jpg" height="150px">
+                                    <h4><strong>Room 2</strong></h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="video-replica">
+                    <iframe src="https://www.youtube.com/embed/RO6g-9pA0rs?playlist=RO6g-9pA0rs&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
+                </div>
+                <div class="video-replica">
+                    <iframe src="https://www.youtube.com/embed/QGGRkbwnM44?playlist=QGGRkbwnM44&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
+                </div>
+                <div class="video-replica">
+                    <iframe src="https://www.youtube.com/embed/eGlpLuT-1f8?playlist=eGlpLuT-1f8&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
+                </div>
+                <div class="video-replica">
+                    <iframe src="https://www.youtube.com/embed/6jIc0f0eOfk?playlist=6jIc0f0eOfk&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
+                </div>
+                <div class="video-replica">
+                    <iframe src="https://www.youtube.com/embed/GqMEzrauJkE?playlist=GqMEzrauJkE&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
+                </div>
+                <div class="video-replica">
+                    <iframe src="https://www.youtube.com/embed/zZ-1nrIK_l8?playlist=zZ-1nrIK_l8&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
+                </div>
+                <div class="video-replica">
+                    <iframe src="https://www.youtube.com/embed/4k_3FGSFdMA?playlist=4k_3FGSFdMA&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
+                </div> -->
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Related links
+                </h3>
+                <p class="text-justify">
+                    The NeurMips is implemented on top of the codebase of <a href="https://github.com/facebookresearch/pytorch3d/tree/main/projects/nerf" target="_blank" rel="noopener noreferrer">NeRF (Pytorch3D implementation)</a>.
+                </p>
+               
+            </div>
+        </div>
+        
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@inproceedings{lin2022neurmips,
+  title={NeurMiPs: Neural Mixture of Planar Experts for View Synthesis},
+  author={Lin, Zhi-Hao and Ma, Wei-Chiu and Hsu, Hao-Yu and Wang, Yu-Chiang Frank and Wang, Shenlong},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2022}
+}
+                    </textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                    We thank National Center for High-performance Computing (NCHC) for providing computational and storage resources. We also thank NVIDIA for hardware donation.
+                    <br>
+                    The website template was borrowed from <a href="http://mgharbi.com/" target="_blank" rel="noopener noreferrer">Michaël Gharbi</a>.
+                    <br>
+                    WCM is partially funded by the MIT-IBM Watson AI Lab.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
