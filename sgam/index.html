@@ -108,7 +108,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="text-center">
-                    <video width="900" height="300" autoplay loop controls>
+                    <video width="800" height="267" autoplay loop controls>
                               <source src="diversity_video/teaser.mp4" type="video/mp4">
                               Your browser does not support the video tag.
                     </video>
@@ -154,7 +154,7 @@
                     Results on our CLEVR-Infinite Dataset
                 </h3>
                 <p class="text-justify">
-                    The following videos are examples of diverse scene sampling by varying trajectory orders. 
+                    The following videos are 3D scene examples sampled by varying trajectory orders. 
                 </p>                
                 <div class="col-md-4 text-center">
                     <ul class="nav nav-pills nav-justified">
@@ -216,79 +216,56 @@
                     Results on our GoogleEarth-Infinite Dataset
                 </h3>
                 <p class="text-justify">
-                    The videos qualitatively compare NeurMips with <a href="https://github.com/facebookresearch/pytorch3d/tree/main/projects/nerf" target="_blank" rel="noopener noreferrer">NeRF</a> (PyTorch3D implementation) and <a href="https://nex-mpi.github.io/" target="_blank" rel="noopener noreferrer">NeX</a>, which are volume rendering method and multi-plane image (MPI) respectively.
+                    The following videos are 3D scene examples sampled with initial RGB-D images. 
                 </p>
                 <br>
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                        <ul class="nav nav-pills nav-justified">
-                            <li>
-                                <a href="https://youtu.be/RO6g-9pA0rs" target="_blank" rel="noopener noreferrer">
-                                <image src="img/replica/replica-apartment0.jpg" height="150px">
-                                    <h4><strong>Apartment 0</strong></h4>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://youtu.be/QGGRkbwnM44" target="_blank" rel="noopener noreferrer">
-                                <image src="img/replica/replica-apartment1.jpg" height="150px">
-                                    <h4><strong>Apartment 1</strong></h4>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://youtu.be/eGlpLuT-1f8" target="_blank" rel="noopener noreferrer">
-                                <image src="img/replica/replica-apartment2.jpg" height="150px">
-                                    <h4><strong>Apartment 2</strong></h4>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://youtu.be/6jIc0f0eOfk" target="_blank" rel="noopener noreferrer">
-                                <image src="img/replica/replica-frl0.jpg" height="150px">
-                                    <h4><strong>FRL 0</strong></h4>
-                                </a>
-                            </li>
-                            <br>
-                            <li>
-                                <a href="https://youtu.be/GqMEzrauJkE" target="_blank" rel="noopener noreferrer">
-                                <image src="img/replica/replica-kitchen.jpg" height="150px">
-                                    <h4><strong>Kitchen</strong></h4>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://youtu.be/zZ-1nrIK_l8" target="_blank" rel="noopener noreferrer">
-                                <image src="img/replica/replica-room0.jpg" height="150px">
-                                    <h4><strong>Room 0</strong></h4>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://youtu.be/4k_3FGSFdMA" target="_blank" rel="noopener noreferrer">
-                                <image src="img/replica/replica-room2.jpg" height="150px">
-                                    <h4><strong>Room 2</strong></h4>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col-md-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <img src="diversity_video/GoogleEarth-1.gif" width="800" />
+                        </li>
+                        <li>
+                            <h4><strong>Row-Major</strong></h4>
+                            <video width="272" height="153" autoplay loop controls>
+                              <source src="diversity_video/CLEVR-Infinite-row.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                            
+                        </li>
+                        <li>
+                            <h4><strong>Zigzag</strong></h4>
+                            <video width="272" height="153" autoplay loop controls>
+                              <source src="diversity_video/CLEVR-Infinite-zigzag.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                            
+                        </li>
+                        <br>
+                        <li>
+                            <h4><strong>Greedy</strong></h4>
+                            <video width="272" height="153" autoplay loop controls>
+                              <source src="diversity_video/CLEVR-Infinite-greedy.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                        </li>
+                        <li>
+                            <h4><strong>Ring</strong></h4>
+                            <video width="272" height="153" autoplay loop controls>
+                              <source src="diversity_video/CLEVR-Infinite-ring.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                        </li>
+                        <li>
+                            <h4><strong>Spiral</strong></h4>
+                            <video width="272" height="153" autoplay loop controls>
+                              <source src="diversity_video/CLEVR-Infinite-spiral.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                            
+                        </li>
+                    </ul>
                 </div>
-                <!-- <div class="video-replica">
-                    <iframe src="https://www.youtube.com/embed/RO6g-9pA0rs?playlist=RO6g-9pA0rs&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
-                </div>
-                <div class="video-replica">
-                    <iframe src="https://www.youtube.com/embed/QGGRkbwnM44?playlist=QGGRkbwnM44&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
-                </div>
-                <div class="video-replica">
-                    <iframe src="https://www.youtube.com/embed/eGlpLuT-1f8?playlist=eGlpLuT-1f8&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
-                </div>
-                <div class="video-replica">
-                    <iframe src="https://www.youtube.com/embed/6jIc0f0eOfk?playlist=6jIc0f0eOfk&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
-                </div>
-                <div class="video-replica">
-                    <iframe src="https://www.youtube.com/embed/GqMEzrauJkE?playlist=GqMEzrauJkE&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
-                </div>
-                <div class="video-replica">
-                    <iframe src="https://www.youtube.com/embed/zZ-1nrIK_l8?playlist=zZ-1nrIK_l8&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
-                </div>
-                <div class="video-replica">
-                    <iframe src="https://www.youtube.com/embed/4k_3FGSFdMA?playlist=4k_3FGSFdMA&loop=1&autoplay=0&mute=1" allowfullscreen width="100%" height="100%"></iframe>
-                </div> -->
+               
             </div>
         </div>
             
